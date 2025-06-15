@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edit Author — Digital Library</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <%- include('../partials/navigation', { activePage: 'authors' }) %>
+    <div class="form-section">
+      <h1>Edit author</h1>
+      <form action="/authors/edit/<%= author._id %>" method="POST" class="app-form">
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value="<%= author.name %>"
+            required
+          />
+        </div>
+        <div class="form-btns">
+          <button type="submit" class="btn">Update author</button>
+          <a href="/authors" class="btn secondary">Back to list</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

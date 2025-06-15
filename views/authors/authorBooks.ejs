@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= author.name %> — Books</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <%- include('../partials/navigation') %>
+    <div class="container">
+      <h1>Books by <%= author.name %></h1>
+      <% if (books.length === 0) { %>
+        <p>This author has no books yet.</p>
+      <% } else { %>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Genre</th>
+              <th class="actions-col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% books.forEach(book => { %>
+            <tr>
+              <td>
+                <a href="/books/details/<%= book._id %>?fromAuthor=<%= author._id %>" class="book-link"><%= book.title %></a>
+              </td>
+              <td><%= book.year %></td>
+              <td><%= book.genre %></td>
+              <td class="actions-col">
+                <a href="/books/edit/<%= book._id %>" class="btn">Edit</a>
+                <form
+                  action="/books/delete/<%= book._id %>"
+                  method="POST"
+                  style="display: inline"
+                >
+                  <button
+                    type="submit"
+                    class="btn danger"
+                    onclick="return confirm('Delete this book?');"
+                  >
+                    Delete
+                  </button>
+                </form>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      <% } %>
+      <a href="/authors" class="btn secondary">Back to authors</a>
+    </div>
+  </body>
+</html>

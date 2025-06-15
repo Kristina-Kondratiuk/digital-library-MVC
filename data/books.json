@@ -1,0 +1,31 @@
+[
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "year": 1954,
+      "genre": "Fantasy",
+      "description": "Epic adventure to destroy the One Ring."
+    },
+    {
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "year": 1945,
+      "genre": "Satire",
+      "description": "A farmyard fable with deep political meaning."
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "genre": "Romance",
+      "description": "Wit, love, and manners in Regency England."
+    },
+    {
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "year": 2005,
+      "genre": "Historical Fiction",
+      "description": "A girl steals books and shares them during WWII."
+    }
+  ]
+  

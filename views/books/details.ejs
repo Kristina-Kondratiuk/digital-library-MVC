@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Details — <%= book.title %></title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <%- include('../partials/navigation') %>
+    <div class="container book-details-card">
+      <h1><%= book.title %></h1>
+      <div class="book-meta">
+        <div class="book-meta-item">
+          <span class="meta-label">Author:</span>
+          <span><%= book.author ? book.author.name : 'No author' %></span>
+        </div>
+        <div class="book-meta-item">
+          <span class="meta-label">Year:</span>
+          <span><%= book.year %></span>
+        </div>
+        <div class="book-meta-item">
+          <span class="meta-label">Genre:</span>
+          <span><%= book.genre %></span>
+        </div>
+        <div class="book-meta-item">
+          <span class="meta-label">Description:</span>
+          <span><%= book.description || 'No description' %></span>
+        </div>
+      </div>
+      <div class="form-btns book-details-actions">
+        <a href="/books/edit/<%= book._id %>" class="btn">Edit</a>
+        <form action="/books/delete/<%= book._id %>" method="POST" style="display: inline">
+          <button type="submit" class="btn danger" onclick="return confirm('Delete this book?');">
+            Delete
+          </button>
+        </form>
+        <% if (fromAuthor) { %>
+          <a href="/authors/<%= fromAuthor %>/books" class="btn secondary">Back to author's books</a>
+        <% } else { %>
+          <a href="/books" class="btn secondary">Back to list</a>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
