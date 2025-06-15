@@ -40,7 +40,7 @@ npm install
 
 ### 3. Konfiguracja bazy danych
 
-W katalogu głównym utwórz plik `.env` o treści:
+W katalogu głównym otwórz plik `.env` i dodaj do:
 ```
 MONGO_URI = <Twój_connection_string_do_MongoDB>
 ```
