@@ -1,31 +1,114 @@
 [
-    {
-      "title": "The Lord of the Rings",
-      "author": "J.R.R. Tolkien",
-      "year": 1954,
-      "genre": "Fantasy",
-      "description": "Epic adventure to destroy the One Ring."
-    },
-    {
-      "title": "Animal Farm",
-      "author": "George Orwell",
-      "year": 1945,
-      "genre": "Satire",
-      "description": "A farmyard fable with deep political meaning."
-    },
-    {
-      "title": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "year": 1813,
-      "genre": "Romance",
-      "description": "Wit, love, and manners in Regency England."
-    },
-    {
-      "title": "The Book Thief",
-      "author": "Markus Zusak",
-      "year": 2005,
-      "genre": "Historical Fiction",
-      "description": "A girl steals books and shares them during WWII."
-    }
-  ]
-  
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "year": 1954,
+    "genre": "Fantasy",
+    "description": "Epic adventure to destroy the One Ring."
+  },
+  {
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "year": 1945,
+    "genre": "Satire",
+    "description": "A farmyard fable with deep political meaning."
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "year": 1813,
+    "genre": "Romance",
+    "description": "Wit, love, and manners in Regency England."
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "year": 2005,
+    "genre": "Historical Fiction",
+    "description": "A girl steals books and shares them during WWII."
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "genre": "Dystopian",
+    "description": "The chilling vision of a totalitarian future under Big Brother."
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "year": 1937,
+    "genre": "Fantasy",
+    "description": "Bilbo Baggins embarks on a grand adventure to reclaim treasure."
+  },
+  {
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "year": 1847,
+    "genre": "Gothic",
+    "description": "A classic coming-of-age love story."
+  },
+  {
+    "title": "Sense and Sensibility",
+    "author": "Jane Austen",
+    "year": 1811,
+    "genre": "Romance",
+    "description": "Two sisters navigate love and heartbreak."
+  },
+  {
+    "title": "The Shining",
+    "author": "Stephen King",
+    "year": 1977,
+    "genre": "Horror",
+    "description": "A haunted hotel turns a father against his family."
+  },
+  {
+    "title": "Carrie",
+    "author": "Stephen King",
+    "year": 1974,
+    "genre": "Horror",
+    "description": "A bullied girl discovers her supernatural powers."
+  },
+  {
+    "title": "Emma",
+    "author": "Jane Austen",
+    "year": 1815,
+    "genre": "Romance",
+    "description": "A matchmaking heroine learns about love."
+  },
+  {
+    "title": "The Old Man and the Sea",
+    "author": "Ernest Hemingway",
+    "year": 1952,
+    "genre": "Classic",
+    "description": "An aging fisherman’s battle with a giant marlin."
+  },
+  {
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "year": 1897,
+    "genre": "Horror",
+    "description": "The classic vampire novel."
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "year": 1932,
+    "genre": "Dystopian",
+    "description": "A vision of a highly controlled, pleasure-driven future society."
+  },
+  {
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "year": 1985,
+    "genre": "Dystopian",
+    "description": "A chilling vision of a patriarchal future."
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": 1925,
+    "genre": "Classic",
+    "description": "Jazz Age decadence and the pursuit of the American Dream."
+  }
+]

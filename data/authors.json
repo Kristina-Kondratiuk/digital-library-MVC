@@ -1,10 +1,15 @@
 [
-    { "name": "J.R.R. Tolkien" },
-    { "name": "George Orwell" },
-    { "name": "Stephen King" },
-    { "name": "Jane Austen" },
-    { "name": "Gabriel Garcia Marquez" },
-    { "name": "Markus Zusak" },
-    { "name": "Margaret Atwood" }
-  ]
-  
+  { "name": "J.R.R. Tolkien" },
+  { "name": "George Orwell" },
+  { "name": "Stephen King" },
+  { "name": "Jane Austen" },
+  { "name": "Gabriel Garcia Marquez" },
+  { "name": "Markus Zusak" },
+  { "name": "Margaret Atwood" },
+  { "name": "Charlotte Brontë" },
+  { "name": "Ernest Hemingway" },
+  { "name": "Bram Stoker" },
+  { "name": "Aldous Huxley" },
+  { "name": "Margaret Atwood" },
+  { "name": "F. Scott Fitzgerald" }
+]
