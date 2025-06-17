@@ -7,11 +7,19 @@ exports.listBooks = async (req, res) => {
     const sort = req.query.sort || "";
     let filter = {};
 
+    let authorIds = [];
+
     if (query) {
+      const matchingAuthors = await Author.find({
+        name: { $regex: query, $options: "i" }
+      });
+      authorIds = matchingAuthors.map(a => a._id);
+
       filter = {
         $or: [
           { title: { $regex: query, $options: "i" } },
           { genre: { $regex: query, $options: "i" } },
+          { author: { $in: authorIds } }
         ],
       };
     }
@@ -20,16 +28,6 @@ exports.listBooks = async (req, res) => {
     const page = parseInt(req.query.page) || 1;
 
     let books = await Book.find(filter).populate("author");
-
-    if (query) {
-      books = books.filter(
-        (book) =>
-          (book.author &&
-            book.author.name.toLowerCase().includes(query.toLowerCase())) ||
-          book.title.toLowerCase().includes(query.toLowerCase()) ||
-          (book.genre || "").toLowerCase().includes(query.toLowerCase())
-      );
-    }
 
     if (sort === "title_asc")
       books.sort((a, b) => a.title.localeCompare(b.title));
